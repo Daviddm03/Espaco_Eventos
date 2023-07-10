@@ -1,0 +1,553 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    width: 100%;
+    height: 90vh;
+    padding: 40px 2%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(imagens/71756156_3056307534411523_808172408266555392_n.jpg);
+    
+}
+
+header nav {
+    float: right;
+    margin-right: 25px;
+    font-size: 17px;
+}
+
+nav.mobile-menu {
+    display: none;
+    width: 32px;
+    height: 32px;
+    margin-right: 45px;
+    background-image: url(imagens/menu-aberto.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+nav.mobile-menu:hover ul {
+    display: block;
+}
+
+nav.mobile-menu ul {
+    background-image: linear-gradient(to right , #100116 , #23024b , #330a60);
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 80px; 
+    list-style-type: none;
+    text-align: center;
+}
+
+nav.mobile-menu ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+}
+
+nav.mobile-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat alternates";
+}
+
+nav.mobile-menu ul li a:hover {
+    color: #D55FEC;
+}
+
+header .logo {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-image: url(imagens/298880660_487427923385349_2671710535726287666_n.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+header nav.desktop-menu ul {
+    list-style-type: none;
+}
+
+header nav.desktop-menu li {
+    float: left;
+    padding: 0 20px;
+}
+
+header nav.desktop-menu a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat alternates";
+}
+
+header nav.desktop-menu a:hover {
+    color: #D55FEC;
+}
+
+.chamada1 {
+    max-width: 600px;
+    float: right;
+    margin: 50px 50px;
+}
+
+.chamada1 h2 {
+    font-size: 50px;
+    color: white;
+    font-weight: normal;
+    font-family: "Montserrat alternates";
+}
+
+.chamada1 h2 em {
+    color: #D55FEC;
+}
+
+.chamada1 p {
+    font-family: "Montserrat alternates";
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.sessão1 {
+    width: 100%;
+    background-image: linear-gradient(180deg , #330a60 , #23024b , #100116);
+    padding: 0 2%;
+    height: 450px;
+}
+
+.texto-sessão1 {
+    float: left;
+    width: 40%;
+}
+
+.texto-sessão1 h2 {
+    color: white;
+    font-family: "Montserrat alternates";
+    margin-top: 80px;
+    margin-left: 100px;
+    font-size: 28px;
+}
+
+.texto-sessão1 h2 em {
+    color:#D55FEC;
+}
+
+.texto-sessão1 p {
+    color: white;
+    font-family: "Montserrat alternates";
+    margin-top: 10px;
+    margin-left: 100px;
+    font-size: 18px;
+    
+}
+
+.texto-sessão1 ul li {
+    color: white;
+    font-family: "Montserrat alternates";
+    margin-top: 10px;
+    margin-left: 100px;
+    font-size: 17px;
+    list-style-position: inside;
+    float: left;
+    width: 100%;
+}
+
+.btn1-texto {
+    background-color: #D55FEC;
+    border-radius: 30px;
+    width: 165px;
+    height: 44px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 100px;
+    font-family: "Montserrat alternates";
+    text-align: center;
+    line-height: 44px;
+}
+
+.btn1-texto:hover{
+   background-color: #06eb52;
+}
+
+.carrossel {
+    box-shadow: 5px 5px 37px 17px #000000;
+    overflow: hidden;
+    height: auto;
+    width: 275px;
+    float: right;
+    margin-right: 130px;
+    margin-top: 100px;
+    border: 8px double white;
+    cursor: pointer;
+    position: relative;
+}
+
+.container3 {
+    display: flex;
+    transition: transform 2.0s ease-in-out;
+    transform: translateX(0);
+}
+
+.container3 img {
+    object-fit: cover;
+    width: 275px;
+}
+
+.sessão2 {
+    display: inline-block;
+    width: 100%;
+    background-image: linear-gradient(180deg , #BA55D3 , #9932CC , #9400D3);
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 450px; 
+    text-align: center;
+    font-family: "Montserrat alternates";
+}
+
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+.sessão2 h2 {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    color: #100116; 
+    font-size: 33px;
+    margin-top: 80px; 
+}
+
+@keyframes slideInRight {
+    from{
+        transform: translateX(300px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+.sessão2 p {
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    color: white;
+    font-size: 21px;
+    margin-top: 20px;
+    max-width: 700px;
+    display: inline-block;
+}
+
+.sessão2 p em {
+    color: #100116; 
+    font-weight: 700;
+}
+
+.sessão3 {
+    background-image: linear-gradient(180deg , #9400D3 , #9932CC , #BA55D3);
+    padding: 100px 0;
+}
+
+.container5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    float: left; 
+    width: 50%;
+    color: white;
+    font-family: "Montserrat alternates";
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.form h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #100116; 
+}
+
+.form form {
+    margin-top: 15px;
+}
+
+.form input {
+    width: 90%;
+    max-width: 480px;
+    margin-top: 8px;
+    height: 58px;
+    padding-left: 8px;
+    line-height: 58px;
+    border: 1px solid #100116;
+}
+
+.form textarea {
+    width: 90%;
+    max-width: 480px;
+    margin-top: 8px;
+    padding: 15px;
+    border: 1px solid #100116;
+    height: 160px;
+}
+
+.form form input[type=submit]{
+    background-color: #23024b;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 17px;
+    font-family: "Montserrat alternates";
+    border: 0;
+}
+
+.form form input[type=submit]:hover{
+   background-color: #06eb52;
+}  
+
+.map-wraper {
+    float: right; 
+    width: 50%;
+    color: white;
+    margin-left: 15%;
+}
+
+.map-wraper h2 {
+    font-size: 25px;
+    font-family: "Montserrat alternates";
+    font-weight: 600;
+    color: #100116;
+}
+
+.map {
+    margin-top: 10px; 
+    width: 100%;
+    max-width: 360px;
+    height: 320px;
+    background-color: white;
+    border: 2px solid #23024b;
+}
+
+footer {
+    padding: 40px 10%;
+    background-color: #23024b;
+    font-family: "Montserrat alternates";
+    font-weight: 300;
+    font-size: 15px;
+    color: white;
+}
+
+footer p:nth-of-type(1){
+    float: left;
+}
+
+footer p:nth-of-type(2){
+    float: right;
+}
+
+
+@media screen and (max-width: 451px){
+    .sessão2{
+        height: 600px;
+    }
+
+    .part1 h2{
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 478px){
+    .part1 h2{
+        font-size: 100%;
+    }
+}
+
+
+@media screen and (max-width: 640px){
+    .part1 h2{
+        font-size: 130%;
+    }
+
+    
+footer {
+   text-align: center;
+}
+
+footer p:nth-of-type(1){
+    float: none;
+}
+
+footer p:nth-of-type(2){
+    float: none;
+    margin-top: 4px;
+}
+} 
+
+@media screen and (max-width: 768px){
+    header {
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        padding: 40px 2%;
+    }
+    
+    header .logo{
+        margin-left: 25px;
+    }
+ 
+    nav.desktop-menu{
+        display:none;
+    }
+
+    nav.mobile-menu{ 
+        display: block; 
+        margin-right: 28px;
+    }
+
+    .chamada1 {
+        max-width: none;
+        width: 100%;
+        float: none;
+        margin: 100px 0;
+        text-align: center;
+    }
+    
+    .chamada1 h2 {
+        font-size: 40px;
+        color: white;
+        font-weight: normal;
+        font-family: "Montserrat alternates";
+    }
+    
+    .chamada1 p {
+        font-family: "Montserrat alternates";
+        color: white;
+        font-size: 15px;
+        margin-top: 15px;
+    } 
+
+    .sessão2 h2{
+        margin-top: 70px;
+        font-size: 25px;
+    }
+
+    .sessão2 p{
+        font-size: 15px;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 785px){
+    .sessão1 {
+        padding: 40px 2%;
+        height: auto;
+    }
+
+    .texto-sessão1{
+        float: none;
+        width: 100%;
+        overflow: hidden; 
+        margin-left: auto;
+        margin-right: auto; 
+        text-align: center;
+    }
+
+    .texto-sessão1 h2{
+        font-size: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .texto-sessão1 p{
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    .texto-sessão1 ul{
+        display: inline-block;
+        width: auto;
+    }
+
+    .texto-sessão1 ul li{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .btn1-texto{
+       display: inline-block;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 30px;
+    }
+
+    .carrossel{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1010px){
+    .container5 {
+    flex-direction: column;
+    }
+
+    .form { 
+    width: 50%;
+    color: white;
+    font-family: "Montserrat alternates";
+    }
+
+    .map-wraper {  
+    width: 50%;
+    color: white;
+    margin-top: 10%;
+    }
+
+    .map {
+        margin-top: 10px; 
+        width: 90%;
+        max-width: 480px;
+        height: 380px;
+        background-color: white;
+        border: 2px solid #23024b;
+    }
+
+}
